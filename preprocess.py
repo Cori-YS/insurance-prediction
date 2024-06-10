@@ -7,7 +7,8 @@ df = pd.read_csv('data/insurance.csv')
 
 # Verificação de valores ausentes
 print(df.isnull().sum())
-# Para remover todas as linhas que possuem valores missing
+
+# Remover todas as linhas que possuem valores missing
 df.dropna(inplace=True)
 
 
